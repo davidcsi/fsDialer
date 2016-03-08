@@ -59,28 +59,6 @@ $con->events("plain","CHANNEL_ANSWER CHANNEL_HANGUP_COMPLETE PLAYBACK_STOP");
 
 my $event;
 
-#	{
-#		"campaing_type":"message",
-#		"outbound_provider":"vozelia",
-#		"concurrent_calls":2,
-#		"audio_array":
-#		[
-#			{
-#				"url":"http:\/\/51.255.163.245\/customer\/userpanel\/get_audio_data\/876\/wav",
-#				"duration":"26",
-#				"id":"876"
-#			}
-#		],
-#		"time_between_calls":1,
-#		"max_destination_retry":1,
-#		"outbound_caller_id":"600750553",
-#		"phone_list_array":
-#		{
-#			"600750553":"jorge movil",
-#			"886127068":"jorge casa"
-#		}
-#	}
-#
 print "Getting campaing data\n";
 
 my $url     = "http://localhost/api.php?campaing=" . $campaign_id;
