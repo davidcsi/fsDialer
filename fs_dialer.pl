@@ -167,7 +167,7 @@ exit 0;
 
 sub connect2pg(){
 	# connect
-	$dbh = DBI->connect("DBI:mysql:freeswitch;host=localhost", "root", "dv092171",{'RaiseError' => 1});
+	$dbh = DBI->connect("DBI:mysql:freeswitch;host=localhost", "root", "password",{'RaiseError' => 1});
 }
 
 sub createCallForMessageType($$) {
